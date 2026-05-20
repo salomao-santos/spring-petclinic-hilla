@@ -10,10 +10,6 @@ target/*
 *.iws
 /target
 .sts4-cache/
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-_site/
 
 # The following files are generated/updated by vaadin-maven-plugin
 node_modules/
