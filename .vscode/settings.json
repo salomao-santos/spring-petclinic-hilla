@@ -1,17 +1,27 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "files.eol": "\n",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "java.configuration.updateBuildConfiguration": "automatic",
-  "java.compile.nullAnalysis.mode": "automatic",
-  "spring-boot.ls.java.home": "",
-  "css.validate": true,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "kiroAgent.agentIgnoreFiles":[".gitignore", ".kiroignore"],
+  "kiroAgent.trustedCommands": [
+    "alias",
+    "dlx",
+    "git commit *",
+    "kind",
+    "kubectl config",
+    "mkdir",
+    "mvn",
+    "npm",
+    "npx",
+    "pnpm"
+  ],
+   "kiroAgent.commandDenylist": [
+    "rm -rf",
+    "sudo",
+    "chmod 777",
+    "eval",
+    "curl | sh",
+    "wget | sh",
+    "> /dev/",
+    "mkfs",
+    "dd if=",
+    "git push *"
+  ]
 }
